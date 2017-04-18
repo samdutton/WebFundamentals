@@ -2,19 +2,10 @@ project_path: /web/_project.yaml
 book_path: /web/tools/_book.yaml
 description: Get started with debugging JavaScript using Chrome DevTools in this interactive tutorial.
 
-{# wf_updated_on: 2017-01-04 #}
+{# wf_updated_on: 2017-03-30 #}
 {# wf_published_on: 2017-01-04 #}
 
-<style>
-.devtools-inline {
-  max-height: 1em;
-  vertical-align: middle;
-}
-</style>
-
-<!-- TODO
-     make demo responsive
--->
+{% include "web/tools/chrome-devtools/_shared/styles.html" %}
 
 # Get Started with Debugging JavaScript in Chrome DevTools {: .page-title }
 
@@ -28,9 +19,6 @@ for debugging all types of JavaScript bugs.
 If you're using `console.log()` to find and fix bugs in your code, consider
 using the workflow outlined in this tutorial instead. It's often much faster
 and more effective.
-
-Note: This tutorial is based on Chrome 57, which is currently
-[Canary](https://www.google.com/chrome/browser/canary.html).
 
 ## Step 1: Reproduce the bug {: #step-1 }
 
@@ -57,6 +45,8 @@ to fix in this tutorial.
 
 Whoops. That result is wrong. The result should be `6`. This is the bug that
 you're going to fix.
+
+{% include "web/tools/chrome-devtools/javascript/_feedback/1.html" %}
 
 ## Step 2: Pause the code with a breakpoint
 
@@ -107,6 +97,8 @@ handler, DevTools automatically pauses on the first line of that node's
 Note: This is just one of the many types of breakpoints that DevTools offers.
 What breakpoint you should use depends on what type of issue you're debugging.
 
+{% include "web/tools/chrome-devtools/javascript/_feedback/2.html" %}
+
 [resume]: /web/tools/chrome-devtools/images/resume-script-execution.png
 
 ## Step 3: Step through the code
@@ -135,6 +127,8 @@ That's the basic idea of stepping through code. If you look at the code in
 you can use another type of breakpoint to pause the code closer to the
 location of the bug.
 
+{% include "web/tools/chrome-devtools/javascript/_feedback/3.html" %}
+
 [into]: /web/tools/chrome-devtools/images/step-into.png
 [over]: /web/tools/chrome-devtools/images/step-over.png
 
@@ -160,6 +154,8 @@ line-of-code breakpoint. Try it now:
 
 The value of `sum` looks suspicious. It looks like it's being evaluated as
 a string, when it should be a number. This may be the cause of the bug.
+
+{% include "web/tools/chrome-devtools/javascript/_feedback/4.html" %}
 
 ## Step 5: Check variable values
 
@@ -216,6 +212,8 @@ fixes for the bug you just discovered. Try it now:
        </figcaption>
      </figure>
 
+{% include "web/tools/chrome-devtools/javascript/_feedback/5.html" %}
+
 [add]: /web/tools/chrome-devtools/javascript/imgs/add-expression.png
 
 ## Step 6: Apply a fix
@@ -247,6 +245,8 @@ running in your browser. It won't fix the code for all users that run your
 page. To do that, you need to fix the code that's running on the servers
 that serve your page.
 
+{% include "web/tools/chrome-devtools/javascript/_feedback/6.html" %}
+
 [deactivate]: /web/tools/chrome-devtools/images/deactivate-breakpoints-button.png
 
 ## Next steps
@@ -264,7 +264,7 @@ other ways, including:
 
 <a class="gc-analytics-event"
    data-category="DevTools / Debug JS / Get Started / Next Steps / Breakpoints"
-   href="add-breakpoints" target="_blank"
+   href="breakpoints" target="_blank"
    rel="noopener noreferrer"><button>Show Me All The Breakpoints</button></a>
 
 There's a couple of code stepping controls that weren't explained in this
@@ -272,43 +272,13 @@ tutorial. Check out the link below to learn more about them.
 
 <a class="gc-analytics-event"
    data-category="DevTools / Debug JS / Get Started / Next Steps / Breakpoints"
-   href="step-code#stepping_in_action" target="_blank"
+   href="reference#stepping" target="_blank"
    rel="noopener noreferrer"><button>I Want To Master Code Stepping</button></a>
 
 ## Feedback
 
 Help us make this tutorial better by answering the questions below.
 
-{% framebox width="auto" height="auto" %}
+{% include "web/tools/chrome-devtools/javascript/_feedback/7.html" %}
 
-<p>Did you complete the tutorial successfully?</p>
-
-<button class="gc-analytics-event"
-        data-category="DevTools / JS / Get Started"
-        data-label="Completed / Yes">Yes</button>
-
-<button class="gc-analytics-event"
-        data-category="DevTools / JS / Get Started"
-        data-label="Completed / No">No</button>
-
-<p>Did this tutorial contain the information you were looking for?</p>
-
-<button class="gc-analytics-event"
-        data-category="DevTools / JS / Get Started"
-        data-label="Relevant / Yes">Yes</button>
-
-<button class="gc-analytics-event"
-        data-category="DevTools / JS / Get Started"
-        data-label="Relevant / No">No</button>
-
-<p>Was the tutorial too long?</p>
-
-<button class="gc-analytics-event"
-        data-category="DevTools / JS / Get Started"
-        data-label="Too Long / Yes">Yes</button>
-
-<button class="gc-analytics-event"
-        data-category="DevTools / JS / Get Started"
-        data-label="Too Long / No">No</button>
-
-{% endframebox %}
+{% include "web/tools/chrome-devtools/javascript/_feedback/8.html" %}

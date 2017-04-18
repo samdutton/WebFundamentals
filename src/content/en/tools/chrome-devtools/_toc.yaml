@@ -53,16 +53,21 @@ toc:
       section:
       - title: Get Started
         path: /web/tools/chrome-devtools/javascript/
-      - title: Set Breakpoints
-        path: /web/tools/chrome-devtools/javascript/add-breakpoints
-      - title: Step Through Code
-        path: /web/tools/chrome-devtools/javascript/step-code
-      - title: Pretty-Print Minified JavaScript
-        path: /web/tools/chrome-devtools/javascript/pretty-print
-      - title: Watch Variables in Sources
-        path: /web/tools/chrome-devtools/javascript/watch-variables
+      - title: Pause Your Code With Breakpoints
+        path: /web/tools/chrome-devtools/javascript/breakpoints
       - title: Map Preprocessed Code to Source Code
         path: /web/tools/chrome-devtools/javascript/source-maps
+      - title: JS Debugging Reference
+        path: /web/tools/chrome-devtools/javascript/reference
+      - title: Step Through Code
+        path: /web/tools/chrome-devtools/javascript/step-code
+        status: deprecated
+      - title: Pretty-Print Minified JavaScript
+        path: /web/tools/chrome-devtools/javascript/pretty-print
+        status: deprecated
+      - title: Watch Variables in Sources
+        path: /web/tools/chrome-devtools/javascript/watch-variables
+        status: deprecated
     - title: Using the Console
       section:
       - title: Overview
@@ -83,16 +88,16 @@ toc:
         path: /web/tools/chrome-devtools/console/events
       - title: Command Line Reference
         path: /web/tools/chrome-devtools/console/command-line-reference
-    - title: How to Look at Performance
+    - title: Analyze Runtime Performance
       section:
+      - title: Get Started
+        path: /web/tools/chrome-devtools/evaluate-performance/
+      - title: Overview
+        path: /web/tools/chrome-devtools/rendering-tools/
       - title: How to Use the Timeline Tool
         path: /web/tools/chrome-devtools/evaluate-performance/timeline-tool
       - title: Timeline Event Reference
         path: /web/tools/chrome-devtools/evaluate-performance/performance-reference
-    - title: Analyze Runtime Performance
-      section:
-      - title: Overview
-        path: /web/tools/chrome-devtools/rendering-tools/
       - title: Speed Up JavaScript Execution
         path: /web/tools/chrome-devtools/rendering-tools/js-execution
       - title: Diagnose Forced Synchronous Layouts
@@ -105,6 +110,9 @@ toc:
         path: /web/tools/chrome-devtools/network-performance/issues
       - title: Reference
         path: /web/tools/chrome-devtools/network-performance/reference
+      - title: Resource Loading
+        path: /web/tools/chrome-devtools/network-performance/resource-loading
+        status: deprecated
     - title: Fix Memory Problems
       section:
       - title: Overview
